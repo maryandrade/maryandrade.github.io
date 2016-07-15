@@ -1,0 +1,46 @@
+# Site settings
+title: maryandrade
+email: mary@maryandrade.com
+description: Design, creativity.
+url: "http://maryandrade.com" # the base hostname & protocol for your site
+twitter_username: itsMaryAndrade
+github_username:  maryandrade
+codepen_username: maryandrade
+instagram_username: itsMaryAndrade
+gems: [jekyll-paginate, jekyll-gist]
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# Build settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:title
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+#Default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Mary Andrade
+      layout: "post"
+      comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"
+
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      author: Mary Andrade
+      layout: "post"

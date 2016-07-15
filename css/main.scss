@@ -1,0 +1,74 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$base-font-family        : 'Vollkorn', Georgia, serif;
+$secondary-font-family   : 'Josefin Sans', sans-serif;
+
+// Font Weights
+
+$base-font-size          : 1.15em;
+$small-font-size         : $base-font-size * 0.875;
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--normal     : 400;
+$font-weight--bold       : 600;
+$font-weight--ultra-bold : 700;
+
+// Our variables
+
+$base-line-height : 1.5;
+$spacing-unit     : 30px;
+
+// Descriptive Base colorr
+
+$text-color              : #606666;
+$background-color        : #fbfbfb;
+$background-color-grey   : #f1f1f1;
+$brand-color             : #E84A5F;
+$blue-color              : #41b3ff;
+
+$grey-color              : #828282;
+$grey-color-light        : lighten($grey-color, 40%);
+$grey-color-dark         : darken($grey-color, 25%);
+$footer-color            : #1C1C1C;
+$nav-color-trans         : rgba(0,0,0,0.4);
+$nav-color-trans-hover   : rgba(0,0,0,0.7);
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Breakpoints
+
+$brkpoint--sm    : 1px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 1080px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

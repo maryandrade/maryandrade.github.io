@@ -1,0 +1,42 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+    <!-- Column 1 -->
+      <div class="footer-col  footer-col-1">&copy; 2015 <a href="{{ "/about" | prepend:site.baseurl }}">{{ site.title }}</a>. Subscribe via<a href="{{ "/feed.xml" | prepend:site.baseurl }}">RSS</a></div>
+
+    <!-- Column 2 -->
+      <div class="footer-col  footer-col-2">
+
+          {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="social-media-list">Twitter</a>
+            <span>|</span>
+          {% endif %}
+
+          {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" class="social-media-list">Github</a>
+            <span>|</span>
+          {% endif %}
+
+          {% if site.codepen_username %}
+            <a href="https://codepen.io/{{ site.codepen_username }}" class="social-media-list">Codepen</a>
+            <span>|</span>
+          {% endif %}
+
+          {% if site.instagram_username %}
+            <a href="https://instagram.com/{{ site.instagram_username }}" class="social-media-list">Instagram</a>
+            <span>|</span>
+          {% endif %}
+
+          {% if site.email %}
+            <a href="mailto:{{ site.email }}" class="social-media-list">Email</a>
+          {% endif %}
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.category %} • {{ post.category }}{% endif %}</p>
+
+        <!-- {{ post.excerpt }} -->
+        {{ post.content }}
+
+        <!-- <a class="btn--default" href="{{ post.url | prepend: site.baseurl }}">Read more</a> -->
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Pagination starts here -->
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-btn">&laquo; Prev</a>
+    {% else %}
+      <span></span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% elsif page == 1 %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-nbr">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination-nbr">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-btn">Next &raquo;</a>
+    {% else %}
+      <span></span>
+    {% endif %}
+  </div>
+  {% endif %}
+
+
+</div>

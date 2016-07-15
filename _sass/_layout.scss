@@ -1,0 +1,354 @@
+/****************************************
+  Site header
+ ****************************************/
+
+.site-header {
+    border-top: 5px solid $brand-color;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+    text-align: center;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+
+}
+
+.site-title {
+    font-family: $secondary-font-family;
+    color: rgba($brand-color,0.7);
+    font-weight: $font-weight--bold;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    transition: all 0.2s ease-in-out;
+
+      &:hover {
+          color: $brand-color;
+      }
+}
+
+.site-title:after {
+    content: "maryandrade";
+    color: rgba($blue-color,0.5);
+    font-weight: $font-weight--bold;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    transition: all 0.2s ease-in-out;
+
+      &:hover {
+          color: $blue-color;
+      }
+}
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+        font-family: $secondary-font-family;
+        font-size: $small-font-size * 0.75;
+        font-weight: $font-weight--bold;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &:hover {
+            border-bottom: 1px solid $brand-color;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.site-header h2 {
+  font-size: $base-font-size * 1.5;
+  font-family: $secondary-font-family;
+  font-weight: $font-weight--light;
+  color: $text-color;
+  text-transform: uppercase;
+  clear: both;
+  margin-top: 50px;
+}
+
+.kicker {
+  font-size: $base-font-size * 1.1;
+  font-family: $secondary-font-family;
+  margin-bottom: 30px;
+}
+
+
+
+/****************************************
+  Site footer
+ ****************************************/
+
+.site-footer {
+    border-top: 4px solid $brand-color;
+    padding: $spacing-unit 0;
+    background-color: $footer-color;
+    height: 50px;
+    color: #fff;
+}
+
+.footer-col-wrapper {
+    margin-left: -$spacing-unit / 2;
+    font-size: $small-font-size / 1.2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    font-family: $secondary-font-family;
+    padding-left: $spacing-unit / 2;
+    overflow: hidden;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+
+    &:first-child {
+        padding-left: 0px;
+    }
+
+    &:hover {
+      color: $brand-color;
+    }
+}
+
+.footer-col span {
+  margin-left: 5px;
+}
+
+.footer-col-1 {
+    float: left;
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    float: right;
+    text-align: right;
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        text-align: center;
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col span {
+      display: none;
+    }
+
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        margin-top: 5px;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+/****************************************
+  Page content
+ ****************************************/
+
+.page-content {
+    padding: $spacing-unit 0;
+    font-size: $base-font-size;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit * 4;
+    }
+}
+
+.post-link {
+    font-size: 36px;
+    font-weight: $font-weight--bold;
+    color: $text-color;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $brand-color;
+    }
+}
+
+.post-meta {
+    font-family: $secondary-font-family;
+    font-size: $small-font-size;
+    font-weight: $font-weight--light;
+    color: $grey-color;
+    text-align: center;
+}
+
+.post-meta:after {
+    content: "";
+    display: block;
+    width: 96px;
+    height: 4px;
+    background: $brand-color;
+    margin: 30px auto;
+}
+
+
+.btn--default {
+  color: $grey-color-dark;
+  font-family: $secondary-font-family, sans-serif;
+  font-size: $small-font-size * 0.8;
+  text-decoration: none;
+  border: 1px solid $grey-color-dark;
+  border-radius: 5%;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  box-sizing: border-box;
+  left: 50%;
+  margin: 20px 0 0 -50px;
+
+  &:hover {
+      color: white;
+      background-color: $grey-color-dark;
+  }
+}
+
+
+
+/****************************************
+  Posts
+ ****************************************/
+
+.post-header {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit * 2;
+    text-align: center;
+}
+
+.post-title {
+    font-size: 36px;
+    font-weight: $font-weight--bold;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    img {
+      display: block;
+      position: relative;
+      margin: 20px auto 30px;
+
+      @include media-query($on-palm) {
+        display: none;
+      }
+    }
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}

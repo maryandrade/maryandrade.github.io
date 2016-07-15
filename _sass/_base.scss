@@ -1,0 +1,262 @@
+/****************************************
+  Reset some basic elements
+ ****************************************/
+
+// * {
+//   box-sizing: border-box;
+// }
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/****************************************
+  Basic styling
+ ****************************************/
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    ::selection {
+      background-color: $brand-color;
+      color: $background-color;
+    }
+}
+
+
+
+/****************************************
+  Set `margin-bottom` to maintain vertical rhythm
+ ****************************************/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/****************************************
+  Images
+ ****************************************/
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/****************************************
+  Figures
+ ****************************************/
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/****************************************
+  Lists
+ ****************************************/
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/****************************************
+  Headings
+ ****************************************/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font-family;
+    color: $text-color;
+    font-weight: 300;
+}
+
+
+
+/****************************************
+  Links
+ ****************************************/
+.post-list li p a,
+.post-content a {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px solid $brand-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #F6F6D9;
+        border-bottom: 1px solid $brand-color;
+        text-decoration: none;
+    }
+}
+
+
+
+/****************************************
+  Pagination
+ ****************************************/
+
+.pagination {
+  position: relative;
+  margin: 30px auto;
+  font-family: $secondary-font-family;
+	padding: em(5px) em(10px);
+	font-size: em(15px);
+
+  .pagination-nbr {
+      color: $text-color;
+      margin: 0 5px;
+      text-decoration: none;
+      border-bottom: 1px dotted $brand-color;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+          color: $brand-color;
+          background-color: rgba($brand-color,0.15);
+          text-decoration: none;
+      }
+  }
+
+}
+
+.pagination-btn {
+    color: $grey-color-dark;
+    font-family: $secondary-font-family, sans-serif;
+    font-size: $small-font-size * 0.8;
+    text-decoration: none;
+    border: 1px solid $grey-color-dark;
+    border-radius: 5%;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: white;
+        background-color: $grey-color-dark;
+    }
+  }
+
+
+
+/****************************************
+  Blockquotes
+ ****************************************/
+
+blockquote {
+    color: $grey-color;
+    background-color: $grey-color-light;
+    border-left: 3px solid $brand-color;
+    padding: 5px 0px 5px 10px;
+    font-size: $base-font-size * 0.9;
+    letter-spacing: 0.7px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/****************************************
+  Code formating
+ ****************************************/
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: $grey-color-light;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/****************************************
+  Wrapper
+ ****************************************/
+
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin: 0 auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+
+
+/****************************************
+  Clearfix
+ ****************************************/
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/****************************************
+  Icons
+ ****************************************/
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
