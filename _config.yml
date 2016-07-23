@@ -4,8 +4,8 @@ email: mary@maryandrade.com
 description: Design, creativity.
 url: "http://maryandrade.com" # the base hostname & protocol for your site
 twitter_username: itsMaryAndrade
-github_username:  maryandrade
-codepen_username: maryandrade
+# github_username:  maryandrade
+# codepen_username: maryandrade
 instagram_username: itsMaryAndrade
 gems: [jekyll-paginate, jekyll-gist]
 paginate: 5

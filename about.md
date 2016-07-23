@@ -10,7 +10,6 @@ My name is Mary Andrade, and I'm a web designer in constant learning and refinem
 
 My main interest is web design and I have a fascination with front-end web technologies. In this site I present the evolution of my work, the exploration of my own creativity through writing, and an outlet to connect with like minded individuals who I can share my interests in culture, books, and good intentions.
 
-Please visit my [Now page]({{ site.baseurl }}/now/ ) if you're interested in knowing how I occupy my time and attention.  
 
 About this Site
 ---------------

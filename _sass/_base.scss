@@ -22,7 +22,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: $font-weight--normal;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -101,14 +101,11 @@ h1, h2, h3, h4, h5, h6 {
  ****************************************/
 .post-list li p a,
 .post-content a {
-    color: $text-color;
+    color: $brand-color;
     text-decoration: none;
-    border-bottom: 1px solid $brand-color;
-    transition: all 0.2s ease-in-out;
 
     &:hover {
         background-color: #F6F6D9;
-        border-bottom: 1px solid $brand-color;
         text-decoration: none;
     }
 }
@@ -165,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
  ****************************************/
 
 blockquote {
-    color: $grey-color;
+    color: $text-color;
     background-color: $grey-color-light;
     border-left: 3px solid $brand-color;
     padding: 5px 0px 5px 10px;

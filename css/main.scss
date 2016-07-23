@@ -9,18 +9,17 @@
 
 // Font Stacks
 
-$base-font-family        : 'Vollkorn', Georgia, serif;
-$secondary-font-family   : 'Josefin Sans', sans-serif;
+$base-font-family        : 'PT Serif', Georgia, serif;
+$secondary-font-family   : 'Montserrat', sans-serif;
 
 // Font Weights
 
-$base-font-size          : 1.15em;
+$base-font-size          : 1.1em;
 $small-font-size         : $base-font-size * 0.875;
 $font-weight--thin       : 100;
 $font-weight--light      : 300;
 $font-weight--normal     : 400;
 $font-weight--bold       : 600;
-$font-weight--ultra-bold : 700;
 
 // Our variables
 
@@ -29,7 +28,7 @@ $spacing-unit     : 30px;
 
 // Descriptive Base colorr
 
-$text-color              : #606666;
+$text-color              : #282828;
 $background-color        : #fbfbfb;
 $background-color-grey   : #f1f1f1;
 $brand-color             : #E84A5F;
@@ -69,6 +68,5 @@ $brkpoint--lg    : 1080px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
-        "syntax-highlighting"
+        "layout"
 ;

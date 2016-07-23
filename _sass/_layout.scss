@@ -15,7 +15,7 @@
 .site-title {
     font-family: $secondary-font-family;
     color: rgba($brand-color,0.7);
-    font-weight: $font-weight--bold;
+    font-weight: $font-weight--normal;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -134,7 +134,7 @@
 }
 
 .kicker {
-  font-size: $base-font-size * 1.1;
+  font-size: $font-weight--thin;
   font-family: $secondary-font-family;
   margin-bottom: 30px;
 }
@@ -255,8 +255,7 @@
 
 .post-meta {
     font-family: $secondary-font-family;
-    font-size: $small-font-size;
-    font-weight: $font-weight--light;
+    font-size: 15px;
     color: $grey-color;
     text-align: center;
 }
