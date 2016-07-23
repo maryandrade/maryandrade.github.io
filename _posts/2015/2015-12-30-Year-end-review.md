@@ -1,8 +1,7 @@
 ---
 title: 2015 Year review - A New Life
 date: 2015-12-30
-category: personal
-excerpt_separator: <!--excerpt-->
+category: Personal
 ---
 
 Overall, 2015 was a good year. A year that brought a lot of changes for my family as a whole, and on a personal level for each of us. This review will focus on the personal and family aspects, leaving the professional for last since that didn't go at all as I had planned at the beginning of 2015.
@@ -11,7 +10,7 @@ This is the first time I do a formal year-end review, because previous years wer
 
 I will first describe what went well, and then what didn't go well. Using the formula proposed by [Chris Guillebeau](http://chrisguillebeau.com/).
 
-<!--excerpt-->
+<!--more-->
 
 ### What went well
 

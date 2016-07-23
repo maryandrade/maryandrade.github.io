@@ -1,7 +1,7 @@
 ---
 title: Installing subl command in OS X El Capitan
 date: 2015-11-12
-category: development
+category: Development
 ---
 
 In any kind of development, most of the work is repetitive, and without a system in place, it would take ages to complete a project. By following this guideline, in my previous installation of Mac OS X Yosemite, I had the Sublime Text 3 CLI `subl` command working according to [this tutorial](http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/) by [Oliver Lacan](https://twitter.com/olivierlacan). This tutorial assumes the `/usr/local/bin` directory as the load path to place the symbolic link of the `subl` command since it's the default load path in OS X.

@@ -1,7 +1,7 @@
 ---
 title: Upgrading to Jekyll 3.0
 date: 2015-11-16
-category: development
+category: Development
 ---
 
 Jekyll 3.0 was released in late October, and since I was building my personal site using this platform I decided to upgrade from version 2.5.2.

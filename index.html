@@ -12,10 +12,11 @@ layout: default
         </h2>
         <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.category %} • {{ post.category }}{% endif %}</p>
 
-        <!-- {{ post.excerpt }} -->
-        {{ post.content }}
+        {{ post.excerpt }}
 
-        <!-- <a class="btn--default" href="{{ post.url | prepend: site.baseurl }}">Read more</a> -->
+        {% if post.content contains site.excerpt_separator %}
+          <a class="btn--default" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+      {% endif %}
       </li>
     {% endfor %}
   </ul>
