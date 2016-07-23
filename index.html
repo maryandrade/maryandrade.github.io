@@ -6,11 +6,15 @@ layout: default
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.category %} • {{ post.category }}{% endif %}</p>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.category %} • {{ post.category }}{% endif %} • {% assign words = content | number_of_words %}
+        {% if words < 360 %}
+          1 min
+        {% else %}
+          {{ words | divided_by: 180 }} mins
+        {% endif %} read</p>
 
         {{ post.excerpt }}
 
@@ -48,6 +52,12 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
+
+  <form action="/search.html" method="get">
+    <label for="search-box">Search</label>
+    <input type="text" id="search-box" name="query">
+    <input type="submit" value="search">
+  </form>
 
 
 </div>

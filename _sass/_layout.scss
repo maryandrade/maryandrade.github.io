@@ -235,7 +235,7 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit * 4;
+        margin-bottom: $spacing-unit * 6;
     }
 }
 
@@ -273,16 +273,16 @@
 .btn--default {
   color: $grey-color-dark;
   font-family: $secondary-font-family, sans-serif;
-  font-size: $small-font-size * 0.8;
+  font-size: $small-font-size;
   text-decoration: none;
-  border: 1px solid $grey-color-dark;
-  border-radius: 5%;
+  border: 2px solid $grey-color-dark;
+  // border-radius: 5%;
   padding: 10px 15px;
   transition: all 0.2s ease-in-out;
   position: absolute;
   box-sizing: border-box;
   left: 50%;
-  margin: 20px 0 0 -50px;
+  margin: 50px 0 0 -50px;
 
   &:hover {
       color: white;
