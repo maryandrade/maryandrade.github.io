@@ -133,12 +133,13 @@
   margin-top: 50px;
 }
 
-.kicker {
-  font-size: $font-weight--thin;
+.hero-text {
   font-family: $secondary-font-family;
-  margin-bottom: 30px;
+  font-size: $base-font-size * 1.1;
+  padding: 50px 0;
+  text-align: center;
+  border-bottom: 1px solid $grey-color-light;
 }
-
 
 
 /****************************************
