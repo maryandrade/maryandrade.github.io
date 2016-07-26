@@ -5,7 +5,16 @@
     <div class="footer-col-wrapper">
 
     <!-- Column 1 -->
-      <div class="footer-col  footer-col-1">&copy; 2015 <a href="{{ "/about" | prepend:site.baseurl }}">{{ site.title }}</a>. Subscribe via<a href="{{ "/feed.xml" | prepend:site.baseurl }}">RSS</a></div>
+      <div class="footer-col  footer-col-1">
+        &copy; 2016 <a href="{{ "/about" | prepend:site.baseurl }}">{{ site.title }}</a>. Subscribe via<a href="{{ "/feed.xml" | prepend:site.baseurl }}">RSS</a>
+          <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+          </form>
+
+      </div>
+
 
     <!-- Column 2 -->
       <div class="footer-col  footer-col-2">

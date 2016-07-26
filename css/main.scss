@@ -33,6 +33,7 @@ $background-color        : #fbfbfb;
 $background-color-grey   : #f1f1f1;
 $brand-color             : #E84A5F;
 $blue-color              : #41b3ff;
+$yellow-color            : #F6F6D9;
 
 $grey-color              : #828282;
 $grey-color-light        : lighten($grey-color, 40%);
@@ -68,5 +69,6 @@ $brkpoint--lg    : 1080px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout"
+        "layout",
+        "form"
 ;
