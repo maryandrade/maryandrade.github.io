@@ -17,5 +17,3 @@ What hurts the most is he’s not able to play with his grandchildren. Maybe if 
 When he is gone I won’t have an image of just the two of us being happy. An image that would remind me of how much he loved me and how much I loved him. Of our time together on this earth.
 
 He used to have a temper, and I hated him for it, but later, his love for me was so grandiose that I never doubted how pure his love for me was. I was one of the lucky humans to have a father like him.
-
-I love you dad. I wish I could take a picture with you.
